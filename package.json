@@ -1,0 +1,30 @@
+{
+  "name": "@js/helper-functions",
+  "version": "1.0.0",
+  "description": "A comprehensive collection of helper functions for easily formatting various data types, including dates, numbers, strings, and more. This package aims to simplify common formatting tasks and provide a consistent and reliable formatting experience across different projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "formatting",
+    "helpers",
+    "utilities",
+    "date",
+    "number",
+    "string",
+    "format"
+  ],
+  "author": "Tantrija <admin@tantrija.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tantrija/js-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tantrija/js-helper/issues"
+  },
+  "homepage": "https://github.com/tantrija/js-helper#readme"
+}
