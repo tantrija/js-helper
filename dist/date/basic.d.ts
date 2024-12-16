@@ -1,0 +1,10 @@
+export declare const getCurrentDate: () => Date;
+export declare const getCurrentTime: () => string;
+export declare const getCurrentDateTime: () => string;
+export declare const formatDate: (date: Date, format: string) => string;
+export declare const formatTime: (date: Date) => string;
+export declare const parseDate: (dateString: string) => Date;
+export declare const toISOString: (date: Date) => string;
+export declare const toUnixTimestamp: (date: Date) => number;
+export declare const fromUnixTimestamp: (timestamp: number) => Date;
+export declare const cloneDate: (date: Date) => Date;

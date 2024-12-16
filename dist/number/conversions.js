@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.fromOctal = exports.fromHex = exports.fromBinary = exports.toOctal = exports.toHex = exports.toBinary = void 0;
+const toBinary = (num) => num.toString(2);
+exports.toBinary = toBinary;
+const toHex = (num) => num.toString(16);
+exports.toHex = toHex;
+const toOctal = (num) => num.toString(8);
+exports.toOctal = toOctal;
+const fromBinary = (binary) => parseInt(binary, 2);
+exports.fromBinary = fromBinary;
+const fromHex = (hex) => parseInt(hex, 16);
+exports.fromHex = fromHex;
+const fromOctal = (octal) => parseInt(octal, 8);
+exports.fromOctal = fromOctal;

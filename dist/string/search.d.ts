@@ -1,0 +1,12 @@
+export declare function contains(str: string, substring: string): boolean;
+export declare function startsWith(str: string, prefix: string): boolean;
+export declare function endsWith(str: string, suffix: string): boolean;
+export declare function isEmpty(str: string): boolean;
+export declare function isPalindrome(str: string): boolean;
+export declare function countOccurrences(str: string, char: string): number;
+export declare function indexOf(str: string, searchValue: string): number;
+export declare function lastIndexOf(str: string, searchValue: string): number;
+export declare function matchesPattern(str: string, pattern: RegExp): boolean;
+export declare function isAlpha(str: string): boolean;
+export declare function isNumeric(str: string): boolean;
+export declare function isAlphaNumeric(str: string): boolean;

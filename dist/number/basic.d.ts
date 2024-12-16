@@ -1,0 +1,12 @@
+export declare const add: (a: number, b: number) => number;
+export declare const subtract: (a: number, b: number) => number;
+export declare const multiply: (a: number, b: number) => number;
+export declare const divide: (a: number, b: number) => number;
+export declare const modulus: (a: number, b: number) => number;
+export declare const increment: (a: number) => number;
+export declare const decrement: (a: number) => number;
+export declare const square: (a: number) => number;
+export declare const cube: (a: number) => number;
+export declare const power: (base: number, exponent: number) => number;
+export declare const sqrt: (a: number) => number;
+export declare const cbrt: (a: number) => number;

@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.formatToTimeZone = exports.toLocaleString = exports.toLocaleTimeString = exports.toLocaleDateString = void 0;
+const toLocaleDateString = (date, locale) => date.toLocaleDateString(locale);
+exports.toLocaleDateString = toLocaleDateString;
+const toLocaleTimeString = (date, locale) => date.toLocaleTimeString(locale);
+exports.toLocaleTimeString = toLocaleTimeString;
+const toLocaleString = (date, locale) => date.toLocaleString(locale);
+exports.toLocaleString = toLocaleString;
+const formatToTimeZone = (date, timeZone) => date.toLocaleString('en-US', { timeZone });
+exports.formatToTimeZone = formatToTimeZone;

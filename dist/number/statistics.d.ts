@@ -1,0 +1,9 @@
+export declare const min: (...nums: number[]) => number;
+export declare const max: (...nums: number[]) => number;
+export declare const average: (nums: number[]) => number;
+export declare const sum: (nums: number[]) => number;
+export declare const median: (nums: number[]) => number;
+export declare const mode: (nums: number[]) => number[];
+export declare const range: (nums: number[]) => number;
+export declare const variance: (nums: number[]) => number;
+export declare const standardDeviation: (nums: number[]) => number;

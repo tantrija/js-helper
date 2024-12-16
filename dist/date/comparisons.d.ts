@@ -1,0 +1,9 @@
+export declare const isBefore: (date1: Date, date2: Date) => boolean;
+export declare const isAfter: (date1: Date, date2: Date) => boolean;
+export declare const isSameDay: (date1: Date, date2: Date) => boolean;
+export declare const isSameMonth: (date1: Date, date2: Date) => boolean;
+export declare const isSameYear: (date1: Date, date2: Date) => boolean;
+export declare const isBetween: (date: Date, startDate: Date, endDate: Date) => boolean;
+export declare const compareDates: (date1: Date, date2: Date) => -1 | 0 | 1;
+export declare const isWeekend: (date: Date) => boolean;
+export declare const isWeekday: (date: Date) => boolean;

@@ -1,0 +1,10 @@
+export declare function mergeObjects<T extends object, U extends object>(target: T, source: U): T & U;
+export declare function cloneObject<T extends object>(obj: T): T;
+export declare function shallowClone<T extends object>(obj: T): T;
+export declare function freezeObject<T extends object>(obj: T): T;
+export declare function sealObject<T extends object>(obj: T): T;
+export declare function assignDefaults<T extends object>(target: T, defaults: Partial<T>): T;
+export declare function omitKeys<T extends object>(obj: T, keysToOmit: (keyof T)[]): Partial<T>;
+export declare function pickKeys<T extends object>(obj: T, keysToPick: (keyof T)[]): Partial<T>;
+export declare function renameKeys<T extends object>(obj: T, keyMap: Record<string, string>): Partial<T>;
+export declare function removeUndefined<T extends object>(obj: T): Partial<T>;

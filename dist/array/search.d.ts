@@ -1,0 +1,12 @@
+export declare function findMax(array: number[]): number | undefined;
+export declare function findMin(array: number[]): number | undefined;
+export declare function indexOf<T>(array: T[], element: T): number;
+export declare function lastIndexOf<T>(array: T[], element: T): number;
+export declare function contains<T>(array: T[], element: T): boolean;
+export declare function filterByCondition<T>(array: T[], predicate: (value: T) => boolean): T[];
+export declare function removeFalsyValues<T>(array: T[]): T[];
+export declare function findDuplicates<T>(array: T[]): T[];
+export declare function findUnique<T>(array: T[]): T[];
+export declare function intersect<T>(array1: T[], array2: T[]): T[];
+export declare function difference<T>(array1: T[], array2: T[]): T[];
+export declare function symmetricDifference<T>(array1: T[], array2: T[]): T[];
