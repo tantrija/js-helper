@@ -1,158 +1,157 @@
-## **@tantrija/helper-functions**  
-*A comprehensive collection of helper functions for formatting data types like dates, numbers, strings, and more.*
+# **@tantrija/helper-functions**
 
-![npm](https://img.shields.io/npm/v/@tantrija/helper-functions) ![license](https://img.shields.io/npm/l/@tantrija/helper-functions) ![downloads](https://img.shields.io/npm/dm/@tantrija/helper-functions)
+### A comprehensive collection of 500+ helper functions for **strings**, **arrays**, **numbers**, **objects**, and **dates**.
+
+![npm version](https://img.shields.io/npm/v/@tantrija/helper-functions) 
+![downloads](https://img.shields.io/npm/dm/@tantrija/helper-functions)
+![license](https://img.shields.io/npm/l/@tantrija/helper-functions)
+![GitHub stars](https://img.shields.io/github/stars/tantrija/js-helper)
 
 ---
 
-### **Table of Contents**
+## **Table of Contents**
 
-1. [About](#about)  
+1. [Overview](#overview)  
 2. [Installation](#installation)  
-3. [Usage](#usage)  
-4. [Features](#features)  
-5. [Examples](#examples)  
+3. [Features](#features)  
+4. [Function Categories](#function-categories)  
+5. [Quick Examples](#quick-examples)  
 6. [API Reference](#api-reference)  
 7. [Contributing](#contributing)  
-8. [Support and Issues](#support-and-issues)  
+8. [Support](#support)  
 9. [License](#license)
 
 ---
 
-## **About**
+## **Overview**
 
-`@tantrija/helper-functions` is a lightweight and versatile library that provides a **comprehensive collection of helper functions** for common tasks like:
+`@tantrija/helper-functions` is a **type-safe, modular utility library** containing **500+ helper functions** for day-to-day development tasks, including:
 
-- Formatting **dates**, **numbers**, and **strings**  
-- Manipulating **arrays** and **objects**  
-- Providing reliable and consistent formatting across your JavaScript/TypeScript projects  
+✅ **Strings**: Manipulate, format, and validate strings.  
+✅ **Arrays**: Sort, group, and flatten arrays efficiently.  
+✅ **Numbers**: Perform calculations, validations, and conversions.  
+✅ **Objects**: Merge, flatten, and transform objects.  
+✅ **Dates**: Format, calculate, and manipulate dates easily.
 
-It is designed to simplify development workflows and reduce the need for repetitive coding.
+This library is optimized for **JavaScript** and **TypeScript** projects, focusing on performance, type safety, and simplicity.
 
 ---
 
 ## **Installation**
 
-To install the package, use **npm** or **yarn**:
+Install via npm or yarn:
 
-### Using npm:
+### **Using npm**:
 ```bash
 npm install @tantrija/helper-functions
 ```
 
-### Using yarn:
+### **Using yarn**:
 ```bash
 yarn add @tantrija/helper-functions
 ```
 
 ---
 
-## **Usage**
-
-### Importing Functions
-
-You can import specific helper functions based on the category:
-
-#### **ES Modules Syntax**
-```typescript
-import { capitalize, toSnakeCase } from '@tantrija/helper-functions/string';
-import { flattenToDepth, uniqueByKey } from '@tantrija/helper-functions/array';
-import { formatDate, isLeapYear } from '@tantrija/helper-functions/date';
-import { deepMerge, isEmptyObject } from '@tantrija/helper-functions/object';
-```
-
-#### **CommonJS Syntax**
-```javascript
-const { capitalize, toSnakeCase } = require('@tantrija/helper-functions/string');
-const { flattenToDepth, uniqueByKey } = require('@tantrija/helper-functions/array');
-const { formatDate, isLeapYear } = require('@tantrija/helper-functions/date');
-const { deepMerge, isEmptyObject } = require('@tantrija/helper-functions/object');
-```
-
----
-
 ## **Features**
 
-1. 🚀 **Comprehensive Utilities**:  
-   Includes helper functions for:  
-   - **Strings**: Capitalization, casing, formatting, and manipulation  
-   - **Arrays**: Flattening, sorting, grouping, and filtering  
-   - **Objects**: Deep merge, key-value mapping, and validation  
-   - **Numbers**: Validation, math operations, and formatting  
-   - **Dates**: Formatting, comparisons, and date utilities  
-
-2. ✅ **Type-Safe**:  
-   Fully written in **TypeScript** for better type inference and IntelliSense support.
-
-3. 📦 **Lightweight**:  
-   Import only the functions you need to keep your bundle size small.
-
-4. 🛠️ **Well-Tested**:  
-   Includes an extensive suite of tests for reliability and performance.
+- 📦 **500+ Helper Functions**: Prebuilt utilities to simplify repetitive tasks.
+- ⚡ **Modular Imports**: Import only the functions you need to optimize bundle size.
+- 🛠️ **Type-Safe**: Fully written in **TypeScript** for better IntelliSense and static checks.
+- 🚀 **Performance Optimized**: Functions are lightweight and efficient.
+- ✅ **Well-Tested**: Includes extensive test coverage to ensure reliability.
+- 📚 **Easy Documentation**: Organized functions with clear usage examples.
 
 ---
 
-## **Examples**
+## **Function Categories**
 
-### **String Utilities**
+Each category contains **100+ functions** to streamline your workflow:
+
+| Category        | Description                                   | Examples of Functions             |
+|-----------------|-----------------------------------------------|----------------------------------|
+| **Strings**     | String manipulation, formatting, and validation. | `capitalize`, `toSnakeCase`, `trim`, `truncate` |
+| **Arrays**      | Array sorting, filtering, and transformations. | `flattenToDepth`, `uniqueByKey`, `groupByKey` |
+| **Objects**     | Object merging, validation, and key-value operations. | `deepMerge`, `pickKeys`, `flattenObject` |
+| **Numbers**     | Number calculations, formatting, and utilities. | `isPrime`, `factorial`, `randomInRange` |
+| **Dates**       | Date formatting, comparison, and manipulation. | `formatDate`, `addDays`, `isLeapYear` |
+
+---
+
+## **Quick Examples**
+
+### **1. String Utilities**
 
 ```typescript
 import { capitalize, toSnakeCase } from '@tantrija/helper-functions/string';
 
-console.log(capitalize('hello world')); // "Hello world"
-console.log(toSnakeCase('Hello World Example')); // "hello_world_example"
+console.log(capitalize('hello world')); // Output: "Hello world"
+console.log(toSnakeCase('Hello World Example')); // Output: "hello_world_example"
 ```
 
-### **Array Utilities**
+### **2. Array Utilities**
 
 ```typescript
 import { flattenToDepth, uniqueByKey } from '@tantrija/helper-functions/array';
 
 const nestedArray = [1, [2, [3, [4]]]];
-console.log(flattenToDepth(nestedArray, 2)); // [1, 2, 3, [4]]
+console.log(flattenToDepth(nestedArray, 2)); // Output: [1, 2, 3, [4]]
 
-const data = [{ id: 1, name: 'A' }, { id: 2, name: 'B' }, { id: 1, name: 'A' }];
+const data = [{ id: 1 }, { id: 2 }, { id: 1 }];
 console.log(uniqueByKey(data, 'id'));
-// [{ id: 1, name: 'A' }, { id: 2, name: 'B' }]
+// Output: [{ id: 1 }, { id: 2 }]
 ```
 
-### **Object Utilities**
+### **3. Object Utilities**
 
 ```typescript
-import { deepMerge, isEmptyObject } from '@tantrija/helper-functions/object';
+import { deepMerge, flattenObject } from '@tantrija/helper-functions/object';
 
 const obj1 = { a: 1, b: { c: 2 } };
 const obj2 = { b: { d: 3 } };
-console.log(deepMerge(obj1, obj2)); // { a: 1, b: { c: 2, d: 3 } }
 
-console.log(isEmptyObject({})); // true
+console.log(deepMerge(obj1, obj2));
+// Output: { a: 1, b: { c: 2, d: 3 } }
+
+console.log(flattenObject({ a: { b: { c: 1 } } }));
+// Output: { "a.b.c": 1 }
 ```
 
-### **Date Utilities**
+### **4. Number Utilities**
 
 ```typescript
-import { formatDate, isLeapYear } from '@tantrija/helper-functions/date';
+import { isPrime, factorial } from '@tantrija/helper-functions/number';
 
-const date = new Date();
-console.log(formatDate(date, 'YYYY-MM-DD')); // "2024-06-15"
+console.log(isPrime(7)); // Output: true
+console.log(factorial(5)); // Output: 120
+```
 
-console.log(isLeapYear(2024)); // true
+### **5. Date Utilities**
+
+```typescript
+import { formatDate, addDays } from '@tantrija/helper-functions/date';
+
+console.log(formatDate(new Date(), 'YYYY-MM-DD')); // Output: "2024-06-15"
+console.log(addDays(new Date(), 7)); // Adds 7 days to the current date.
 ```
 
 ---
 
 ## **API Reference**
 
-For a full list of available helper functions and detailed documentation, please visit the [API Documentation](https://github.com/tantrija/js-helper#readme).
+For the **full list of 500+ functions** and their usage, visit the:  
+📖 [Full API Documentation](https://github.com/tantrija/js-helper#readme)  
+
+The documentation includes detailed descriptions, parameter explanations, and usage examples for each function.
 
 ---
 
 ## **Contributing**
 
-We welcome contributions to improve this library. If you have ideas, suggestions, or bug fixes:
+We welcome contributions! To contribute:
 
-1. **Fork** the repository.
-2. **Clone** your fork:
+1. Fork the repository on GitHub.
+2. Clone the forked repository:
    ```bash
    git clone https://github.com/tantrija/js-helper.git
    cd js-helper
@@ -163,30 +162,38 @@ We welcome contributions to improve this library. If you have ideas, suggestions
    npm install
    ```
 
-4. Create a branch for your feature:
+4. Add or modify functions under `src/` and write tests in `tests/`.
+5. Run tests to ensure everything works:
    ```bash
-   git checkout -b feature/your-feature-name
+   npm test
    ```
-
-5. Add your changes and tests.
 
 6. Submit a **Pull Request**.
 
+For detailed contribution guidelines, see the [CONTRIBUTING.md](https://github.com/tantrija/js-helper/blob/main/CONTRIBUTING.md).
+
 ---
 
-## **Support and Issues**
+## **Support**
 
-For any issues or bugs, please open an issue on GitHub:  
-[https://github.com/tantrija/js-helper/issues](https://github.com/tantrija/js-helper/issues)
+For issues, feature requests, or questions:
 
-For questions, email: **[admin@tantrija.com](mailto:admin@tantrija.com)**
+- **Open an Issue**: [GitHub Issues](https://github.com/tantrija/js-helper/issues)  
+- **Contact Support**: [admin@tantrija.com](mailto:admin@tantrija.com)
 
 ---
 
 ## **License**
 
-This project is licensed under the [MIT License](./LICENSE).
+This project is licensed under the **MIT License**. See the [LICENSE](./LICENSE) file for more details.
 
 ---
 
-**Thank you for using `@tantrija/helper-functions`! If you find it useful, give it a ⭐ on GitHub.** 🚀
+**If you find `@tantrija/helper-functions` helpful, please ⭐ star the repository on [GitHub](https://github.com/tantrija/js-helper). 🚀**
+
+---
+
+### **Future Enhancements**  
+- Additional utility functions for other data types.  
+- Support for performance monitoring and optimization.  
+- Integration with other frameworks like React and Node.js.  
