@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 import { isSameDay } from "./comparisons";
 import { addDays } from "./manipulation";
 

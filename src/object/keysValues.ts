@@ -1,16 +1,19 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable @typescript-eslint/no-explicit-any*/
+
 export function getObjectKeys(obj: object): string[] {
     return Object.keys(obj);
 }
 
-export function getObjectValues(obj: object): any[] {
+export function getObjectValues(obj: object): any[] { 
     return Object.values(obj);
 }
 
-export function getObjectEntries(obj: object): [string, any][] {
+export function getObjectEntries(obj: object): [string, any][] { 
     return Object.entries(obj);
 }
 
-export function invertObject(obj: Record<string, any>): Record<any, string> {
+export function invertObject(obj: Record<string, any>): Record<any, string> { 
     return Object.fromEntries(Object.entries(obj).map(([key, value]) => [value, key]));
 }
 
@@ -32,7 +35,7 @@ export function mapKeys<T extends object>(obj: T, transform: (key: keyof T) => s
     );
 }
 
-export function mapValues<T extends object>(obj: T, transform: (value: T[keyof T]) => any): Partial<T> {
+export function mapValues<T extends object>(obj: T, transform: (value: T[keyof T]) => any): Partial<T> { 
     return Object.fromEntries(
         Object.entries(obj).map(([key, value]) => [key, transform(value)])
     ) as Partial<T>;

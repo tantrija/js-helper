@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export function flattenToDepth(array: any[], depth: number): any[] {
     if (depth < 1) return array;
     return array.reduce(

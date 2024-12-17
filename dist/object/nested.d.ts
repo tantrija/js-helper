@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function getNestedValue(obj: any, keyPath: string[]): any;
 export declare function setNestedValue(obj: any, keyPath: string[], value: any): void;
 export declare function deleteNestedKey(obj: any, keyPath: string[]): void;

@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export function isEmpty<T>(array: T[]): boolean {
     return array.length === 0;
 }

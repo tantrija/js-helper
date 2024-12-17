@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function flattenToDepth(array: any[], depth: number): any[];
 export declare function mergeSortedArrays(array1: number[], array2: number[]): number[];
 export declare function binarySearch(array: number[], target: number): number;

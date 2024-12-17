@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function isEmpty<T>(array: T[]): boolean;
 export declare function isArray(value: any): boolean;
 export declare function hasDuplicates<T>(array: T[]): boolean;

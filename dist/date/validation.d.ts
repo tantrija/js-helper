@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare const isValidDate: (date: any) => boolean;
 export declare const isLeapYear: (year: number) => boolean;
 export declare const isPastDate: (date: Date) => boolean;

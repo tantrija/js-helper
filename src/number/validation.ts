@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export const isEven = (num: number): boolean => num % 2 === 0;
 export const isOdd = (num: number): boolean => num % 2 !== 0;
 export const isPrime = (num: number): boolean => {

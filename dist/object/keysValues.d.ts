@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function getObjectKeys(obj: object): string[];
 export declare function getObjectValues(obj: object): any[];
 export declare function getObjectEntries(obj: object): [string, any][];

@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export function mapToObject<T>(
     array: [string, T][]
 ): Record<string, T> {

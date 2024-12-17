@@ -1,3 +1,4 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import * as nested from '../../src/object/nested';
 
 test('getNestedValue should get value by key path', () => {

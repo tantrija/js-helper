@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function hasKey<T extends object>(obj: T, key: string | number | symbol): boolean;
 export declare function isEmptyObject(obj: object): boolean;
 export declare function isDeepEqual(obj1: any, obj2: any): boolean;

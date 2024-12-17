@@ -1,3 +1,5 @@
+/* eslint-disable  no-useless-escape */
+
 export function removeWhitespace(str: string): string {
     return str.replace(/\s+/g, '');
 }

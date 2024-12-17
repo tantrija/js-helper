@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export function append<T>(array: T[], element: T): T[] {
     return [...array, element];
 }

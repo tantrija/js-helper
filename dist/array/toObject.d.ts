@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function arrayToObject<T>(array: T[], keyFn: (item: T) => string): Record<string, T>;
 export declare function objectToKeys(obj: Record<string, any>): string[];
 export declare function objectToValues<T>(obj: Record<string, T>): T[];

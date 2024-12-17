@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export function getMatchingKeys<T extends object, U extends object>(obj1: T, obj2: U): (keyof T & keyof U)[] {
     return Object.keys(obj1).filter((key) => key in obj2) as (keyof T & keyof U)[];
 }

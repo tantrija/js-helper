@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare const isEven: (num: number) => boolean;
 export declare const isOdd: (num: number) => boolean;
 export declare const isPrime: (num: number) => boolean;

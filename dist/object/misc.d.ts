@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function objectSize(obj: object): number;
 export declare function freezeDeep<T extends object>(obj: T): T;
 export declare function camelCaseKeys<T extends object>(obj: T): Record<string, any>;

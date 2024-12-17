@@ -1,7 +1,8 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 import * as validation from '../../src/object/validation';
 
 test('hasKey should check for a key', () => {
-    const obj = { a: 1 } as Record<string, any>; // Generalize the object type for the test
+    const obj = { a: 1 } as Record<string, any>;
     expect(validation.hasKey(obj, 'a')).toBe(true);
     expect(validation.hasKey(obj, 'b')).toBe(false);
 });

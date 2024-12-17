@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export function toObject(entries: [string, any][]): Record<string, any> {
     return Object.fromEntries(entries);
 }

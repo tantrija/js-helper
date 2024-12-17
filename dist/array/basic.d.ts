@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 export declare function append<T>(array: T[], element: T): T[];
 export declare function prepend<T>(array: T[], element: T): T[];
 export declare function insertAt<T>(array: T[], index: number, element: T): T[];
